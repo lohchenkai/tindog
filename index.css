@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h2,
+h3 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F7FB;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 1em;
+    max-width: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* == Utilities == */
+.btn {
+    padding: 1.4em 2.7em;
+    border: none;
+    box-shadow: 0 2px 3px darkslategray;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === nav bar ==== */
+nav {
+    padding: 1.5em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>img {
+    width: 34px;
+}
+
+.nav-logo {
+    width: 84px;
+}
+
+/* === Main Content === */
+main {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+    padding: 1em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    background-color: olivedrab;
+}
+
+.main-name {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #F8F8F8;
+    margin-bottom: 0.25em;
+}
+
+.main-description {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #B7B7B7;
+}
+
+.main-badge {
+    max-width: 100%;
+    width: 30%;
+    position: absolute;
+    top: 40px;
+    transform: rotate(-25deg);
+}
+
+/* === selection container === */
+.choice-container {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accept {
+    width: 25px;
+}
+
+#reject {
+    width: 25px;
+    margin-right: 3em;
+}
+
+#reject:hover {
+    background-color: #FFE7EF;
+}
+
+#accept:hover {
+    background-color: #DBFFF4;
+}
